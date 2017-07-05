@@ -1,0 +1,35 @@
+{
+  "name": "lessons",
+  "version": "1.0.0",
+  "description": "lessons API",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "optimist": "^0.6.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --timeout=10000 --recursive ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonRichardson/lessons.git"
+  },
+  "keywords": [
+    "lessons",
+    "api",
+    "express"
+  ],
+  "author": "Simon Richardson <stickupkid@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SimonRichardson/lessons/issues"
+  },
+  "homepage": "https://github.com/SimonRichardson/lessons#readme"
+}
