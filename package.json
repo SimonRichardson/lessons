@@ -6,6 +6,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "optimist": "^0.6.1",
+    "pg": "^6.4.0",
+    "pg-transaction": "^1.0.4",
     "winston": "^2.3.1"
   },
   "devDependencies": {
@@ -14,8 +16,9 @@
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha --timeout=10000 --recursive ./test/*.js"
+    "setup": "node database.js",
+    "start": "node src/server/index.js",
+    "test": "mocha --timeout=10000 --recursive ./test/**/*.js"
   },
   "repository": {
     "type": "git",
